@@ -15,12 +15,10 @@ app.get('/guess/:number', function (req, res) {
 });
 
 app.get('/upgrade/', function (req, res) {
-    number = req.params.number;
     res.send({message: 'ok!!!!'});
 });
 
 app.get('/delete/', function (req, res) {
-    number = req.params.number;
     res.send({message: 'ok, deleted'});
 });
 
