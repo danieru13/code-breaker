@@ -3,7 +3,7 @@ CodeBreaker = require('../app/./code-breaker');
 
 var app = express();
 
-app.get('/setsecret/:secret', function (req, res) {
+app.get('/setsecreto/:secret', function (req, res) {
     number = req.params.secret;
     CodeBreaker.setSecret(number);
     res.send({message: 'ok, let the game begin'});
